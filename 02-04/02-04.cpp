@@ -24,7 +24,7 @@ int main()
 	int dice = (rand() % 6) + 1;
 	char command;
 
-	printf("02-03\n\n");
+	printf("02-04\n\n");
 	printf("丁：０　半：１\n");
 
 	scanf_s("%c", &command, 1);
