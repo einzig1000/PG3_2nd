@@ -44,15 +44,10 @@ int main()
 	int hour = 5;
 	printf("02-02\n\n");
 
-	printf("hour:5");
-	printf("\nStandard salary: %d  Recursive salary: %d\n\n", salary1(hour), salary2Sum(hour));
-
-	while (1)
+	for (hour = 0; hour <= 10; ++hour)
 	{
-		printf("hour:");
-		command = _getch();
+		printf("hour:%d", hour);
 
-		hour = command - '0';
 		printf("\nStandard salary: %d  Recursive salary: %d\n\n", salary1(hour), salary2Sum(hour));
 	}
 
