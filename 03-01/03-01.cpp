@@ -14,12 +14,9 @@ int main()
 
 	Enemy* enemy = new Enemy();
 
-	while (loop)
+	for (int i = 0; i < 10; ++i)
 	{
 		enemy->Update();
-
-		// なんでもいいからキーを押すと次の状態へ
-		_getch();
 	}
 
 
