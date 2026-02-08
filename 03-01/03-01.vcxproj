@@ -124,7 +124,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="03-01.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Enemy.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
