@@ -19,7 +19,7 @@ int main()
 	std::cout << "Compare<float, float>(13.0f, 8.0f)    : Min = " << comp5.Min() << ", Max = " << comp5.Max() << std::endl;
 
 	Compare<double, double> comp6(11.0, 7.0);
-	std::cout << "Compare<float, float>(13.0f, 8.0f)	: Min = " << comp6.Min() << ", Max = " << comp6.Max() << std::endl;
+	std::cout << "Compare<float, float>(11.0, 7.0)	    : Min = " << comp6.Min() << ", Max = " << comp6.Max() << std::endl;
 
 
 	return 0;
