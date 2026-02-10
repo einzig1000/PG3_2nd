@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Student">
+      <UniqueIdentifier>{dcd26824-beff-4d36-ad1d-bd8198f72e55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Student\Hori">
+      <UniqueIdentifier>{69d5bb00-9591-4ae5-b12e-c849f22623b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Student\Miyazi">
+      <UniqueIdentifier>{a822e4bf-3aab-47f6-a4f4-7bf8f4606eb6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Student.cpp">
+      <Filter>Student</Filter>
+    </ClCompile>
+    <ClCompile Include="Hori.cpp">
+      <Filter>Student\Hori</Filter>
+    </ClCompile>
+    <ClCompile Include="Miyazi.cpp">
+      <Filter>Student\Miyazi</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Student.h">
+      <Filter>Student</Filter>
+    </ClInclude>
+    <ClInclude Include="Hori.h">
+      <Filter>Student\Hori</Filter>
+    </ClInclude>
+    <ClInclude Include="Miyazi.h">
+      <Filter>Student\Miyazi</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
