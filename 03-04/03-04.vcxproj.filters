@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Shape">
+      <UniqueIdentifier>{a7ee54e8-b635-48dd-9258-1e575a1ad7aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shape\Triangle">
+      <UniqueIdentifier>{0f7c9f04-fc3a-4b04-89bd-a462da2c1f74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shape\Circle">
+      <UniqueIdentifier>{3802fd78-008a-459a-93a4-2a6c24189b9e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="IShape.cpp">
+      <Filter>Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Triangle.cpp">
+      <Filter>Shape\Triangle</Filter>
+    </ClCompile>
+    <ClCompile Include="Circle.cpp">
+      <Filter>Shape\Circle</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="IShape.h">
+      <Filter>Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Triangle.h">
+      <Filter>Shape\Triangle</Filter>
+    </ClInclude>
+    <ClInclude Include="Circle.h">
+      <Filter>Shape\Circle</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
