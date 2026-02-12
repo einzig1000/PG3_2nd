@@ -16,6 +16,13 @@ public:
         th = std::thread(&MapLoader::load, this, filename);
     }
 
+	// 読み込み完了確認
+    bool isLoaded()
+    {
+        std::lock_guard<std::mutex> lock(mtx);
+        return loaded;
+	}
+
     // 読み込み完了を待つ
     void wait()
     {
@@ -106,8 +113,21 @@ int main()
     // マップをバックグラウンドで読み込み開始
     loader.loadThread("map.csv");
 
-    // 読み込み完了を待つ
-    loader.wait();
+	// 読み込み完了までローディング表示
+    const char* dots[] = { ".  ", ".. ", "..." };
+    int idx = 0;
+
+    while (!loader.isLoaded())
+    {
+        std::cout << "\r読み込み中" << dots[idx] << std::flush;
+        idx = (idx + 1) % 3;
+
+        std::this_thread::sleep_for(std::chrono::milliseconds(300));
+    }
+
+
+    std::cout << "\r読み込み完了！   \n";
+
 
     // マップ取得
     auto map = loader.getMap();
