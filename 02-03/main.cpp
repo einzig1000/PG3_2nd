@@ -3,6 +3,7 @@
 #include <iostream>
 #include <time.h>
 #include <algorithm>
+#include <windows.h>
 
 template <typename T>
 constexpr const T& my_min(const T& a, const T& b)
@@ -16,9 +17,7 @@ constexpr const T& my_min(const T& a, const T& b)
 /// <param name="userGuess">ユーザーの入力</param>
 void DelayReveal(void (*fn)(int, int), unsigned int delayMs, int roll, int userGuess)
 {
-	clock_t start = clock();
-	while ((clock() - start) < delayMs)
-	{}
+	Sleep(delayMs);
 
 	fn(roll, userGuess);
 }
